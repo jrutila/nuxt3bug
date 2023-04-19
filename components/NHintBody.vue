@@ -6,7 +6,8 @@
 </template>
 
 <script setup>
-import { NHello } from "#components"
+// import { NHello } from "#components"
+import * as components from "#components"
 
 const dynamicallyGeneratedText = "Hello <n-hello />"
 
@@ -14,7 +15,8 @@ const renderedText = computed(() => {
   return {
     name: "DynamicComponent",
     template: dynamicallyGeneratedText,
-    components: { NHello },
+    // components: { NHello },
+    components,
   }
 })
 </script>
